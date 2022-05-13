@@ -1,0 +1,133 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='stylesheets/styles.css')
+    link(href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet')
+    title PawanxD - Web Designer
+  body
+    header.l-header
+      nav.nav.bd-grid
+        div
+          a.nav__logo(href='#') PawanxD
+        #nav-menu.nav__menu
+          ul.nav__list
+            li.nav__item
+              a.nav__link.active(href='#home') Home
+            li.nav__item
+              a.nav__link(href='#about') About
+            li.nav__item
+              a.nav__link(href='#skills') Skills
+            li.nav__item
+              a.nav__link(href='#work') Work
+            li.nav__item
+              a.nav__link(href='#contact') Contact
+        #nav-toggle.nav__toggle
+          i.bx.bx-menu
+    main.l-main
+      section#home.home.bd-grid
+        .home__data
+          h1.home__title
+            | Hi,
+            br
+            | I'am 
+            span.home__title-color Pawan
+            br
+            |  Web Designer
+          a.button(href='#contact') Contact
+        .home__social
+          a.home__social-icon(href='')
+            i.bx.bxl-linkedin
+          a.home__social-icon(href='')
+            i.bx.bxl-behance
+          a.home__social-icon(href='')
+            i.bx.bxl-github
+        .home__img
+          svg.home__blob(viewBox='0 0 479 467' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+            mask#mask0(mask-type='alpha')
+              path(d='M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z')
+            g(mask='url(#mask0)')
+              path(d='M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z')
+              image.home__blob-img(x='50' y='60' href='images/perfil.png')
+      section#about.about.section
+        h2.section-title About
+        .about__container.bd-grid
+          .about__img
+            img(src='images/about.jpg' alt='')
+          div
+            h2.about__subtitle I'am Pawan
+            p.about__text
+              | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.
+      section#skills.skills.section
+        h2.section-title Skills
+        .skills__container.bd-grid
+          div
+            h2.skills__subtitle Profesional Skills
+            p.skills__text
+              | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.
+            .skills__data
+              .skills__names
+                i.bx.bxl-html5.skills__icon
+                span.skills__name HTML5
+              .skills__bar.skills__html
+              div
+                span.skills__percentage 95%
+            .skills__data
+              .skills__names
+                i.bx.bxl-css3.skills__icon
+                span.skills__name CSS3
+              .skills__bar.skills__css
+              div
+                span.skills__percentage 85%
+            .skills__data
+              .skills__names
+                i.bx.bxl-javascript.skills__icon
+                span.skills__name JAVASCRIPT
+              .skills__bar.skills__js
+              div
+                span.skills__percentage 65%
+            .skills__data
+              .skills__names
+                i.bx.bxs-paint.skills__icon
+                span.skills__name UX/UI
+              .skills__bar.skills__ux
+              div
+                span.skills__percentage 85%
+          div
+            img.skills__img(src='images/work3.jpg' alt='')
+      section#work.work.section
+        h2.section-title Work
+        .work__container.bd-grid
+          a.work__img(href='')
+            img(src='images/work1.jpg' alt='')
+          a.work__img(href='')
+            img(src='images/work2.jpg' alt='')
+          a.work__img(href='')
+            img(src='images/work3.jpg' alt='')
+          a.work__img(href='')
+            img(src='images/work4.jpg' alt='')
+          a.work__img(href='')
+            img(src='images/work5.jpg' alt='')
+          a.work__img(href='')
+            img(src='images/work6.jpg' alt='')
+      section#contact.contact.section
+        h2.section-title Contact
+        .contact__container.bd-grid
+          form.contact__form(action='')
+            input.contact__input(type='text' placeholder='Name')
+            input.contact__input(type='mail' placeholder='Email')
+            textarea.contact__input(name='' id='' cols='0' rows='10')
+            input.contact__button.button(type='button' value='Submit')
+    footer.footer
+      p.footer__title PawanxD
+      .footer__social
+        a.footer__icon(href='#')
+          i.bx.bxl-facebook
+        a.footer__icon(href='#')
+          i.bx.bxl-instagram
+        a.footer__icon(href='#')
+          i.bx.bxl-twitter
+      p.footer__copy © PawanxD. All rigths reserved
+    script(src='https://unpkg.com/scrollreveal')
+    script(src='javascripts/main.js')
